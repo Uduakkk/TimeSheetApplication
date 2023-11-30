@@ -1,7 +1,19 @@
+using TimesheetApplication.DB.WriteAndReadFromJson;
+using TimesheetApplication.Repository;
+using TimesheetApplication.Services_BusinessLogic;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddScoped<JsonHelper>();
+builder.Services.AddTransient<WriteToJson>();
+builder.Services.AddTransient<ReadFromJson>();
+
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserServices, UserServices>(); 
+builder.Services.AddScoped<IClockEventsRepository, ClockEventsRepository>();
+builder.Services.AddScoped<IClockEventServices, ClockEventServices>();
 
 var app = builder.Build();
 

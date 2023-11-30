@@ -1,0 +1,21 @@
+﻿@using TimesheetApplication.DB.Entities;
+
+@* @{
+    ViewData["Title"] = "Index";
+} *@
+
+<h1>Time Entry</h1>
+
+@model User  // Assuming userId is passed to the view
+
+@using (Html.BeginForm("ClockIn", "TimeEntry", new { userId = Model }, FormMethod.Post))
+{
+    <input type="submit" value="Clock In" />
+}
+
+@using (Html.BeginForm("ClockOut", "TimeEnty", new { userId = Model }, FormMethod.Post))
+{
+    <input type="submit" value="Clock Out" />
+}
+
+
