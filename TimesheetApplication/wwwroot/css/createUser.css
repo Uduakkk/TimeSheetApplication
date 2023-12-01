@@ -1,0 +1,22 @@
+﻿body {
+}
+
+.container-main 
+{
+    padding-left: 5%;
+    background-color: green;
+}
+.back-btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%; 
+    background-color:black; 
+    width: 5vw;
+    padding: 1%;
+    border-radius: 10%;
+
+}
+.back-btn:hover {
+    background-color: green;
+}

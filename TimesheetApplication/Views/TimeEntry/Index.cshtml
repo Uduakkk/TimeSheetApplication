@@ -4,18 +4,30 @@
     ViewData["Title"] = "Index";
 } *@
 
+<link href="@Url.Content("~/css/Home.css")" rel="stylesheet" type="text/css" />
+
+<link href="@Url.Content("~/css/createUser.css")" rel="stylesheet" type="text/css" />
+
+
+
 <h1>Time Entry</h1>
 
 @model User  // Assuming userId is passed to the view
 
-@using (Html.BeginForm("ClockIn", "TimeEntry", new { userId = Model }, FormMethod.Post) )
-{
-    <input type="submit" value="Clock In" />
-}
+<div class="container-main">
 
-@using (Html.BeginForm("ClockOut", "TimeEntry", new { userId = Model }, FormMethod.Post))
-{
-    <input type="submit" value="Clock Out" />
-}
+    @using (Html.BeginForm("ClockIn", "TimeEntry", new { userId = Model }, FormMethod.Post) )
+    {
+
+        <input type="submit" class="all-btn" style="color: white; background-color: green" value="Clock In" />
+        
+    }
+
+    @using (Html.BeginForm("ClockOut", "TimeEntry", new { userId = Model }, FormMethod.Post))
+    {
+        <input type="submit" class="all-btn" style="color: white; background-color: green" value="Clock Out" />
+    }
+</div>
+
 
 

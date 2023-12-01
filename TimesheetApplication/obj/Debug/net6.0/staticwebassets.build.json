@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5tRkEy1oOzuiMGUkvM5PnKaKILjr0U4r2vfqJ0LmdJs=",
+  "Hash": "u0f0/Z2PA8pGkwCsAkySCNWKSB2GjL0uYMDzmWKLqj0=",
   "Source": "TimesheetApplication",
   "BasePath": "_content/TimesheetApplication",
   "Mode": "Default",
@@ -51,6 +51,40 @@
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\TimesheetApplication.bundle.scp.css"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\css\\createUser.css",
+      "SourceId": "TimesheetApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\",
+      "BasePath": "_content/TimesheetApplication",
+      "RelativePath": "css/createUser.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\createUser.css"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\css\\home.css",
+      "SourceId": "TimesheetApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\",
+      "BasePath": "_content/TimesheetApplication",
+      "RelativePath": "css/home.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\home.css"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\css\\site.css",
       "SourceId": "TimesheetApplication",
       "SourceType": "Discovered",
@@ -66,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\css\\userEntries.css",
+      "SourceId": "TimesheetApplication",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\",
+      "BasePath": "_content/TimesheetApplication",
+      "RelativePath": "css/userEntries.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\userEntries.css"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\Lafarge Code Challenge\\TimeSheetApplication\\TimesheetApplication\\wwwroot\\favicon.ico",

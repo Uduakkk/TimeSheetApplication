@@ -1,8 +1,21 @@
-﻿@{
+﻿@* @{
     ViewData["Title"] = "Home Page";
-}
+} *@
+<link href="@Url.Content("~/css/Home.css")" rel="stylesheet" type="text/css" />
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <div class="container-main">
+        <a class="create-user-btn all-btn" asp-area="" asp-controller="User" asp-action="Index">
+            
+                Register User
+            
+        </a>
+
+        <a class="clock-in-btn all-btn" asp-area="" asp-controller="TimeEntry" asp-action="Index">Clock in-Clock out</a>
+
+        <a class="view-entries-btn all-btn" asp-area="" asp-controller="TimeEntry" asp-action="UserEntriesRequest">View Staff clock entries</a>
+
+
+
+    </div>
+</body>
