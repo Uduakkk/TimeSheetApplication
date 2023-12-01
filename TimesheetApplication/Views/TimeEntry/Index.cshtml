@@ -8,12 +8,12 @@
 
 @model User  // Assuming userId is passed to the view
 
-@using (Html.BeginForm("ClockIn", "TimeEntry", new { userId = Model }, FormMethod.Post))
+@using (Html.BeginForm("ClockIn", "TimeEntry", new { userId = Model }, FormMethod.Post) )
 {
     <input type="submit" value="Clock In" />
 }
 
-@using (Html.BeginForm("ClockOut", "TimeEnty", new { userId = Model }, FormMethod.Post))
+@using (Html.BeginForm("ClockOut", "TimeEntry", new { userId = Model }, FormMethod.Post))
 {
     <input type="submit" value="Clock Out" />
 }

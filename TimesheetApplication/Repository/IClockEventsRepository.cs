@@ -1,9 +1,11 @@
-﻿using TimesheetApplication.Models;
+﻿using TimesheetApplication.DB.Entities;
+using TimesheetApplication.Models;
 
 namespace TimesheetApplication.Repository
 {
     public interface IClockEventsRepository
     {
-        void WriteClockToJson(ClockEvents clockEvents);
+        ClockEvents WriteClockToJson(ClockEvents clockEvents);
+        List<TimeEntry> GetClockEventsByUserName(string userName);
     }
 }

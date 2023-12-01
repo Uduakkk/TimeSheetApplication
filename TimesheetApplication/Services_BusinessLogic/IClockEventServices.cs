@@ -6,5 +6,6 @@ namespace TimesheetApplication.Services_BusinessLogic
     {
         ClockEvents ClockIn(Guid userId);
         ClockEvents ClockOut(Guid userId);
+        GetUserEntries userEntries(string userName);
     }
 }

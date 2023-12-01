@@ -36,8 +36,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZUVudHJ5XENsb2NrSW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/Desktop/Lafarge Code Challenge/TimeSheetApplication/TimesheetApplication/Views/TimeEntry/ClockOut.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZUVudHJ5XENsb2NrT3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Lafarge Code Challenge/TimeSheetApplication/TimesheetApplication/Views/TimeEntry/GetClockEntries.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZUVudHJ5XEdldENsb2NrRW50cmllcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/Desktop/Lafarge Code Challenge/TimeSheetApplication/TimesheetApplication/Views/TimeEntry/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZUVudHJ5XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/PC/Desktop/Lafarge Code Challenge/TimeSheetApplication/TimesheetApplication/Views/TimeEntry/UserEntriesRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGltZUVudHJ5XFVzZXJFbnRyaWVzUmVxdWVzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/PC/Desktop/Lafarge Code Challenge/TimeSheetApplication/TimesheetApplication/Views/User/CreateUser.cshtml]

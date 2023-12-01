@@ -59,5 +59,27 @@ namespace TimesheetApplication.Services_BusinessLogic
         {
             throw new NotImplementedException();
         }
+
+        public GetUserEntries userEntries (string userName)
+        {
+            var user = _userRepository.GetUserByUsername(userName);
+            if (user  != null)
+            {
+                var userClockEvents = _clockEventsRepository.GetClockEventsByUserName(userName);
+
+                GetUserEntries userEntries = new GetUserEntries()
+                {
+                    UserId = user.Id,
+                    UserName = userName,
+                    firstName = user.FirstName,
+                    lastName = user.LastName,
+                    timeEntries = userClockEvents
+                };
+
+                return userEntries;
+            }
+
+            return new GetUserEntries();
+        }
     }
 }

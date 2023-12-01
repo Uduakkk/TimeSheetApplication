@@ -43,18 +43,55 @@ namespace TimesheetApplication.Controllers
             return View();
         }
 
+        [HttpGet]
+        public IActionResult ClockOut()
+        {
+            return View();
+        }
+
         [HttpPost]
         public IActionResult ClockOut(string userName)
         {
             var user = _userRepository.GetUserByUsername(userName);
             if (user != null)
             {
-                var userClockOut = _clockEventServices.ClockIn(user.Id);
+                var userClockOut = _clockEventServices.ClockOut(user.Id);
                 return RedirectToAction("Index");
 
             }
 
             return View();
+        }
+
+        [HttpGet]
+
+        public IActionResult UserEntriesRequest()
+        {
+           
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult UserEntriesRequest(string userName)
+        {
+            var user = _userRepository.GetUserByUsername(userName);
+            if (user != null)
+            {
+                TempData["userName"] = user.UserName;
+                return RedirectToAction("GetClockEntries");
+
+            }
+            return View();
+        }
+
+
+        [HttpGet]
+        public IActionResult GetClockEntries(string userName)
+        {
+            string UserName = TempData["userName"] as string;
+            userName = UserName;
+            var userClockEntries = _clockEventServices.userEntries(userName);
+            return View(userClockEntries);
         }
     }
 }

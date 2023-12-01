@@ -1,18 +1,16 @@
-﻿@model TimesheetApplication.Models.ClockIn
-
-
+﻿@model TimesheetApplication.Models.ClockOut
 
 @{
-    ViewData["Title"] = "ClockIn";
+    ViewData["Title"] = "ClockOut";
 }
 
-<h1>ClockIn</h1>
+<h1>ClockOut</h1>
 
 <h4>ClockEvents</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="ClockIn">
+        <form asp-action="ClockOut">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
            @*  <div class="form-group">
                 <label asp-for="UserId" class="control-label"></label>
@@ -24,7 +22,7 @@
                 <input asp-for="Username" class="form-control" />
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
-            @* <div class="form-group">
+           @*  <div class="form-group">
                 <label asp-for="Time" class="control-label"></label>
                 <input asp-for="Time" class="form-control" />
                 <span asp-validation-for="Time" class="text-danger"></span>
@@ -35,7 +33,7 @@
                 <span asp-validation-for="EventType" class="text-danger"></span>
             </div> *@
             <div class="form-group">
-                <input type="submit" value="Clock In" class="btn btn-primary" />
+                <input type="submit" value="Clock Out" class="btn btn-primary" />
             </div>
         </form>
     </div>
