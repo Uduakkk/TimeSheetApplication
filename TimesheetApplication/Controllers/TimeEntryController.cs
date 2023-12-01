@@ -16,11 +16,7 @@ namespace TimesheetApplication.Controllers
         }
         public IActionResult Index()
         {
-           // var user = _userRepository.GetUserById();
-            //if (user == null)
-            //{
-            //    return RedirectToAction("Error");
-            //}
+           
             return View();
         }
 

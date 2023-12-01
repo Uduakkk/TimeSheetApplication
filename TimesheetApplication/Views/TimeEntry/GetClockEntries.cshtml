@@ -4,13 +4,11 @@
     ViewData["Title"] = "GetClockEntries";
 }
 
-@* <link href="@Url.Content("~/css/userEntries.css")" rel="stylesheet" type="text/css" />
-<link href="@Url.Content("~/css/createUser.css")" rel="stylesheet" type="text/css" /> *@
 
 
 <h1>Staff Clock Entries</h1>
 
-@* <div class="container-main"> *@
+
   <div>
 
         <hr />
@@ -28,12 +26,7 @@
             <dd class = "col-sm-10">
                 @Html.DisplayFor(model => model.lastName)
             </dd>
-           @*  <dt class = "col-sm-2">
-                @Html.DisplayNameFor(model => model.UserName)
-            </dt>
-            <dd class = "col-sm-10">
-                @Html.DisplayFor(model => model.UserName)
-            </dd> *@
+          
         </dl>
   </div>
     <table class="table">
@@ -75,5 +68,4 @@
         
         <a asp-action="Index" >Back</a>
     </div>
-@* </div> *@
 
