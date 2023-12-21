@@ -1,4 +1,10 @@
 {
-  "ExpandedNodes": [],
+  "ExpandedNodes": [
+    "",
+    "\\.github",
+    "\\TimesheetApplication",
+    "\\TimesheetApplication\\Properties"
+  ],
+  "SelectedNode": "\\TimesheetApplication\\Properties\\launchSettings.json",
   "PreviewInSolutionExplorer": false
 }

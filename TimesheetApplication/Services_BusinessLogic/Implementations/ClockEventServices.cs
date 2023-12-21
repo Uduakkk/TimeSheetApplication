@@ -1,7 +1,8 @@
 ﻿using TimesheetApplication.Models;
 using TimesheetApplication.Repository;
+using TimesheetApplication.Services_BusinessLogic;
 
-namespace TimesheetApplication.Services_BusinessLogic
+namespace TimesheetApplication.Services_BusinessLogic.Implementations
 {
     public class ClockEventServices : IClockEventServices
     {
@@ -45,7 +46,7 @@ namespace TimesheetApplication.Services_BusinessLogic
 
             var clockEvent = new ClockEvents()
             {
-                
+
                 UserId = user.Id,
                 Username = user.UserName,
                 Time = DateTime.Now,
@@ -60,10 +61,10 @@ namespace TimesheetApplication.Services_BusinessLogic
             throw new NotImplementedException();
         }
 
-        public GetUserEntries userEntries (string userName)
+        public GetUserEntries userEntries(string userName)
         {
             var user = _userRepository.GetUserByUsername(userName);
-            if (user  != null)
+            if (user != null)
             {
                 var userClockEvents = _clockEventsRepository.GetClockEventsByUserName(userName);
 
